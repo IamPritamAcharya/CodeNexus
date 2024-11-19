@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CodeDisplay extends StatelessWidget {
-  // Hardcoded code snippet
   final String code = '''
 void main() {
   print("Hello, CodersHub!");
@@ -10,7 +9,6 @@ void main() {
 print("Yippy!");
   ''';
 
-  // Keywords and their corresponding colors
   final Map<String, Color> syntaxColors = {
     'void': Colors.blueAccent,
     'main': Colors.deepPurpleAccent,
@@ -21,10 +19,9 @@ print("Yippy!");
 
   @override
   Widget build(BuildContext context) {
-    final lines = code.split('\n'); // Split code into lines
+    final lines = code.split('\n');
     final screenWidth = MediaQuery.of(context).size.width;
 
-    // Adjust font sizes and padding based on screen width
     double fontSize = screenWidth < 400 ? 12 : screenWidth < 600 ? 14 : 16;
     double lineNumberWidth = screenWidth < 400 ? 24 : 35;
     double lineSpacing = screenWidth < 400 ? 16 : 26;
@@ -42,7 +39,7 @@ print("Yippy!");
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Line number with responsive width
+               
                 SizedBox(
                   width: lineNumberWidth,
                   child: Text(
@@ -54,8 +51,8 @@ print("Yippy!");
                     ),
                   ),
                 ),
-                SizedBox(width: lineSpacing), // Responsive spacing
-                // Code line with syntax highlighting
+                SizedBox(width: lineSpacing), 
+               
                 Expanded(child: _buildHighlightedLine(line, fontSize)),
               ],
             ),
@@ -65,7 +62,6 @@ print("Yippy!");
     );
   }
 
-  // Method to build a line with syntax highlighting using regex
   Widget _buildHighlightedLine(String line, double fontSize) {
     final words = RegExp(r'(\b\w+\b|\s+|[^\w\s]+)').allMatches(line);
 
