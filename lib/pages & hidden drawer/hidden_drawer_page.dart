@@ -12,15 +12,15 @@ class HiddenDrawerPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: FutureBuilder<List<ScreenHiddenDrawer>>(
-        future: getHiddenDrawerScreens(), // Fetch screens dynamically
+        future: getHiddenDrawerScreens(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            // Show loading indicator while fetching data
+           
             return const Center(child: CircularProgressIndicator());
           }
 
           if (snapshot.hasError) {
-            // Show error message if something goes wrong
+            
             return Center(
               child: Text("Error loading screens: ${snapshot.error}"),
             );
