@@ -10,7 +10,6 @@ import 'package:hidden_drawer_menu/model/screen_hidden_drawer.dart';
 
 import '../cache_manager.dart';
 
-// Structure for each page, label, and icon
 class AppPage {
   final Widget page;
   final String label;
@@ -19,7 +18,7 @@ class AppPage {
   AppPage({required this.page, required this.label, required this.icon});
 }
 
-// List of pages with labels and icons for both Sidebar and HiddenDrawer
+
 List<AppPage> appPages = [
   AppPage(page: MainPage(), label: "Home", icon: Icons.home),
   AppPage(page: const CodeExecutionScreen(), label: "Compiler", icon: Icons.tab),
@@ -27,7 +26,7 @@ List<AppPage> appPages = [
 
 
 Future<List<ScreenHiddenDrawer>> getHiddenDrawerScreens() async {
-  // Check if the user is logged in
+
   final user = await CacheManager.getUserCache();
   bool isLoggedIn = user != null;
 
