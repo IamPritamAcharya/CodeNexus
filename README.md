@@ -2,7 +2,8 @@
 # CodeNexus 🚀  
 _A Cross-Platform App for Coding Contests, Problem Solving, and Real-Time Code Execution_
 
-![CodeNexus Banner](https://via.placeholder.com/800x200.png?text=CodeNexus+%7C+Coding+Made+Easy)
+![CodeNexus Banner](https://drive.google.com/uc?id=1-Q8JOpqd00BJHQjSxVWHEWeqrOezwvYL)
+
 
 ## 📖 Overview  
 **CodeNexus** is a versatile, cross-platform application designed to empower coders with tools to participate in coding contests, solve algorithmic problems, and execute code in real-time. With support for Android, iOS, Web, Windows, and Mac, the app bridges coding communities through dynamic features like leaderboards, achievement badges, and curated learning resources.
