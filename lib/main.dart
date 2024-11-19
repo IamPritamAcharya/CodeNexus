@@ -26,11 +26,11 @@ class CompetitiveProgrammingApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
-        primaryColor: Colors.white, // Text color for primary elements
-        scaffoldBackgroundColor: Colors.black, // Background color for the app
+        primaryColor: Colors.white, 
+        scaffoldBackgroundColor: Colors.black, 
         appBarTheme: AppBarTheme(
-          backgroundColor: Colors.black, // Match AppBar color to main theme
-          elevation: 0, // Make it flat
+          backgroundColor: Colors.black, 
+          elevation: 0, 
           titleTextStyle: TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -45,7 +45,7 @@ class CompetitiveProgrammingApp extends StatelessWidget {
               color: Colors.white, fontSize: 16, fontWeight: FontWeight.w400),
         ),
         buttonTheme: ButtonThemeData(
-          buttonColor: Colors.white, // Define button colors
+          buttonColor: Colors.white,
           textTheme: ButtonTextTheme.primary,
         ),
         iconTheme: IconThemeData(color: Colors.white),
@@ -56,7 +56,7 @@ class CompetitiveProgrammingApp extends StatelessWidget {
         '/home': (context) => LayoutWrapper(child: MainPage(), selectedIndex: 0),
         '/login': (context) => LayoutWrapper(child: LoginPage(), selectedIndex: 1),
 
-        // Additional routes
+       
       },
     );
   }
@@ -74,15 +74,15 @@ class LayoutWrapper extends StatelessWidget {
     final screenWidth = MediaQuery.of(context).size.width;
 
     if (screenWidth < 600) {
-      // Use the hidden drawer for small screens
+     
       return HiddenDrawerPage(selectedIndex: selectedIndex);
     } else {
-      // Use a transparent custom top nav bar for larger screens
+      
       return Scaffold(
-        backgroundColor: Colors.transparent, // Ensure no background color
+        backgroundColor: Colors.transparent, 
         body: Stack(
           children: [
-            child, // Main content
+            child,
             Positioned(
               top: 0,
               left: 0,
