@@ -19,8 +19,8 @@ class NavColors {
   static const Color navSignInBorder = Color.fromARGB(255, 129, 66, 245);
 
   // Glassmorphic and lime theme colors
-  static Color limeBackground = Colors.lime.shade600; // Light lime background
-  static Color limeAccent = Colors.transparent; // Lime for border
-  static const Color limeText = Colors.black; // Dark green text color
+  static Color limeBackground = Colors.lime.shade600; 
+  static Color limeAccent = Colors.transparent; 
+  static const Color limeText = Colors.black; 
 }
 
