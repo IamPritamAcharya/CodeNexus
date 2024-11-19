@@ -24,7 +24,7 @@ class _GlassCardState extends State<GlassCard> with SingleTickerProviderStateMix
       duration: Duration(milliseconds: 200),
       vsync: this,
       lowerBound: 1.0,
-      upperBound: 1.05, // Slightly smaller scale for hover animation
+      upperBound: 1.05, 
     );
   }
 
@@ -47,8 +47,9 @@ class _GlassCardState extends State<GlassCard> with SingleTickerProviderStateMix
         scale: _controller,
         child: Container(
           width: 240,
-          margin: EdgeInsets.symmetric(horizontal: 24, vertical: 12), // Increase vertical padding
-          clipBehavior: Clip.none, // Prevents clipping on scale
+          margin: EdgeInsets.symmetric(horizontal: 24, vertical: 12), 
+          clipBehavior: Clip.none,
+          
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
             boxShadow: [
