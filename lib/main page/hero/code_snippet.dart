@@ -54,7 +54,7 @@ class CodeSnippet extends StatelessWidget {
               Divider(color: Colors.grey[700], height: 1, thickness: 1),
               Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: CodeDisplay(), // No code passed, it’s hardcoded in CodeDisplay
+                child: CodeDisplay(), 
               ),
             ],
           ),
