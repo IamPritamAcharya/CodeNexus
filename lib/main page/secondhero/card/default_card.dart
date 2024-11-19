@@ -1,4 +1,4 @@
-// File: hero/default_card.dart
+
 import 'package:flutter/material.dart';
 import 'glass_card.dart';
 
@@ -13,7 +13,7 @@ class DefaultCard extends StatelessWidget {
       icon: Icons.layers,
       title: 'Card $index',
       onTap: () {
-        // Handle redirection for the default cards
+       
       },
     );
   }
