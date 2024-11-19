@@ -67,11 +67,11 @@ class _SlidingCardListState extends State<SlidingCardList> {
           children: [
             if (isLargeScreen) ...[
               _buildScrollButton(Icons.arrow_left, _scrollLeft),
-              const SizedBox(width: 10), // Only adds space if the button is displayed
+              const SizedBox(width: 10),
             ],
             Expanded(
               child: ListView.builder(
-                key: const PageStorageKey<String>('sliding_card_list'), // Maintain scroll position
+                key: const PageStorageKey<String>('sliding_card_list'), 
                 controller: _scrollController,
                 scrollDirection: Axis.horizontal,
                 physics: const SmoothEdgeScrollPhysics(edgeResistanceFactor: 0.15),
@@ -82,7 +82,7 @@ class _SlidingCardListState extends State<SlidingCardList> {
             if (isLargeScreen) ...[
               const SizedBox(width: 30),
               _buildScrollButton(Icons.arrow_right, _scrollRight),
-               // Only adds space if the button is displayed
+              
             ],
           ],
         ),
@@ -122,7 +122,7 @@ class _SlidingCardListState extends State<SlidingCardList> {
   }
 
   Widget _getCardForIndex(int index) {
-    // Avoid rebuilding the card by returning specific widgets directly
+   
     switch (index) {
       case 0:
         return Card1();
@@ -134,7 +134,7 @@ class _SlidingCardListState extends State<SlidingCardList> {
   }
 
   void _onHover(int index, bool isHovering) {
-    // Optional: Implement a hover effect in the Card widgets if needed
+    
   }
 
   @override
