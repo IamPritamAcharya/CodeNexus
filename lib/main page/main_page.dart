@@ -19,7 +19,7 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
 
-    // Adjust height for SizedBox based on screen width
+
     double topSpacing = screenWidth < 600 ? 100.0 : 180.0;
 
     return Scaffold(
@@ -37,7 +37,7 @@ class MainPage extends StatelessWidget {
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      SizedBox(height: topSpacing), // Responsive spacing
+                      SizedBox(height: topSpacing), 
                       CenterText(),
                       SizedBox(height: 20),
                       ActionButton(),
