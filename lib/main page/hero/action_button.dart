@@ -48,9 +48,10 @@ class _ActionButtonState extends State<ActionButton> {
                 Text(
                   'Enter the Nexus',
                   style: GoogleFonts.robotoMono(
-                    color: Colors.grey[800], // Softer modern text color
-                    fontSize: 14 , // Slightly larger for better readability
-                    fontWeight: FontWeight.w500, // Modern lightweight style
+                    color: Colors.grey[800], 
+                    fontSize: 14 , 
+                    fontWeight: FontWeight.w500, 
+                    
                   ),
                 ),
               ],
